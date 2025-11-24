@@ -1,0 +1,12 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".", 
+    "paths": {
+      "@turnstile/express": ["../packages/middleware/src/index.ts"],
+      "@turnstile/client": ["../packages/client/src/index.ts"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
